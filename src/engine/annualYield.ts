@@ -9,7 +9,6 @@
 import type { PanelSpec, ArrayConfig, Location, WeatherSnapshot } from '../core/types';
 import { simulateStepSafe } from '../core/SolarMath';
 import { fetchAnnualArchive } from '../core/api/openMeteo';
-
 export interface AnnualYieldResult {
   annualAcMWh: number;
   annualDcMWh: number;
