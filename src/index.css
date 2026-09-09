@@ -1,0 +1,10 @@
+/* src/index.css */
+@import "tailwindcss";
+@media print {
+  input[type="range"], button, select { display: none !important; }
+  body { background: white !important; }
+  * { color: #111 !important; border-color: #ccc !important; }
+}
+/* src/index.css — add at bottom */
+.transform-style-3d { transform-style: preserve-3d; }
+.perspective-800 { perspective: 800px; }
