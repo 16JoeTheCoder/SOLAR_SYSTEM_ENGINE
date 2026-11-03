@@ -73,3 +73,15 @@ export default defineConfig([
 ])
 
 ```
+
+## Deploying to Cloudflare
+
+The app is a static Vite build served by Cloudflare (Workers static assets, with SPA fallback).
+
+```bash
+npm run cf:dev        # build + run locally in the Workers runtime
+npm run deploy        # build + deploy to Cloudflare Workers (wrangler.jsonc)
+npm run deploy:pages  # build + deploy ./dist to Cloudflare Pages
+```
+
+For Git-based deploys, connect the repo in the Cloudflare dashboard with build command `npm run build` and output directory `dist`.
